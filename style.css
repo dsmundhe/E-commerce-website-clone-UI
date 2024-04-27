@@ -1,0 +1,363 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+  background-image: url("https://images.unsplash.com/photo-1484086471933-a4fcb164629c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+header nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: #29272763;
+}
+
+header .leftnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 40vw;
+}
+
+header .leftnav .list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+header .leftnav .list ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+header .leftnav .mainlogo h1 {
+  font-size: 2.5rem;
+  margin-right: 100px;
+  margin-left: 50px;
+  color: crimson;
+  transform: rotate(-3deg);
+}
+
+header .leftnav ul li:hover {
+  color: rgb(180, 226, 43);
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+header .rightnav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+header .rightnav button {
+  padding: 12px 18px;
+  border: none;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+header .rightnav button:hover {
+  background-color: rgb(198, 116, 9);
+  color: white;
+}
+
+header .rightnav i:hover {
+  color: aqua;
+}
+
+header .main-box {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.main-box .list-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+  height: 100%;
+  color: white;
+  padding-left: 60px;
+  gap: 800px;
+}
+
+.main-box .about {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+  color: white;
+}
+
+.main-box .list-box .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+  color: #dddddd69;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.main-box .list-box .icons i:hover {
+  color: rgb(1, 251, 38);
+  transform: scale(1.1);
+}
+
+.main-box .list-box .heading {
+  width: 70%;
+}
+
+.list-box .heading h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.list-box .heading h1 span {
+  color: aqua;
+  font-size: 3rem;
+}
+
+.list-box .heading p {
+  line-height: 20px;
+  margin-bottom: 15px;
+  width: 450px;
+  color: rgba(245, 245, 220, 0.505);
+}
+
+.list-box .heading button {
+  padding: 10px 18px;
+  border: none;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-box .heading button:hover {
+  color: white;
+  background-color: brown;
+}
+
+/* For Webkit browsers */
+/* Width and height */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color of the scrollbar handle */
+  border-radius: 6px;
+  /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color of the scrollbar handle on hover */
+}
+
+/* Button (arrows) */
+::-webkit-scrollbar-button {
+  display: none;
+  /* Hide the scrollbar buttons */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+  /* Color of the scrollbar corner */
+}
+
+.cardbox {
+  width: 100vw;
+  height: 370vh;
+}
+
+.cardbox .heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100vw;
+  gap: 80px;
+  background-color: rgba(47, 49, 49, 0.164);
+}
+
+.cardbox .heading-box h2 {
+  color: #363232;
+  cursor: p ointer;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.cardbox .heading-box h2:hover {
+  color: #000;
+  border-bottom: 4px solid blueviolet;
+}
+
+.cardbox .card-box .first-box {
+  width: 100%;
+  height: 70vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardbox .card-box .first-box .card {
+  height: 470px;
+  width: 350px;
+  background-color: #ddd7d7;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cardbox .card-box .first-box .card:hover {
+  transform: scale(1.05);
+  border: 2px solid black;
+  box-shadow: 2px 2px 50px aqua;
+  border-radius: 40px;
+}
+
+.cardbox .card-box .first-box .card .card-image img {
+  padding: 5px;
+  height: 300px;
+  width: 340px;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.cardbox .card-box .first-box .card .card-para {
+  color: #555;
+}
+
+.cardbox .card-box .first-box .card .card-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+.cardbox .card-box .first-box .card .card-button button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: royalblue;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.cardbox .card-box .first-box .card .card-price {
+  color: rgb(182, 12, 12);
+}
+
+.cardbox .card-box .first-box .card .inbox-card {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  height: 55vh;
+  width: 100vw;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+footer .footer-box {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div h1 {
+  font-size: 18px;
+}
+
+footer div select {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+footer div p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #706262f0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+footer div p:hover {
+  color: black;
+}
+
+footer .footer-logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .footer-logo img {
+  width: 100px;
+}
+
+footer .footer-heading {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.186);
+  padding-bottom: 10px;
+}
